@@ -1,0 +1,18 @@
+
+extends layout
+
+block content
+    div.container
+        h1=title
+        div.row
+            div.col-md-12
+                table.table.table-bordered
+                    thead
+                        tr
+                            th="Login"
+                            th="Password"
+                    tbody
+                    each val, index in usersList
+                        tr
+                            td=index
+                            td=val

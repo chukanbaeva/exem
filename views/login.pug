@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div.container
+        div.row
+            div.col-md-4
+            div.col-md-4
+                h1= title
+                form(method="post", action="/users/login/process" )
+                    div.form-group
+                        label(for="login")="Login"
+                        input(class="form-control", type="text", name="login", id="login", placeholder="Login")
+                    div.form-group
+                        label(for="password")="Login"
+                        input(class="form-control", type="password", name = "pass", id="password" placeholder="Password")
+                    button(class="btn btn-default", type="submit")="Sign in"
+            div.col-md-4
